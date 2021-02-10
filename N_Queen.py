@@ -10,7 +10,7 @@ def is_available(candidate,current_col): # 수직체크 대각선 체크
 
 def DFS(N,current_row,current_candidate,final_result):
     if current_row ==N: # N개 배치가 다 끝났다.
-        final_result.append(current_candidate[:])
+        final_result.append(current_candidate[:]) # 얇은 복사
         return
     
     for candidate_col in range(N):
